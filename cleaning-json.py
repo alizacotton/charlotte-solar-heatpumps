@@ -22,17 +22,15 @@ def process(files):
 
 
 def write(data):
-    filepath= 'C:/Users/aliza/OneDrive/charlotte-project/full-data.csv'
+    filepath= #insert filepath
     data.to_csv(filepath, index=False)
 
 
 if __name__ == "__main__": 
-    file1 = 'C:/Users/aliza/OneDrive/charlotte-project/batch1.json'
-    file2 = 'C:/Users/aliza/OneDrive/charlotte-project/batch2.json'
-    file3 = 'C:/Users/aliza/OneDrive/charlotte-project/batch3.json'
-    file4 = 'C:/Users/aliza/OneDrive/charlotte-project/batch4.json'
-    file5 = 'C:/Users/aliza/OneDrive/charlotte-project/batch5.json'
-    files = [file1, file2, file3, file4, file5]
+    """file1 = #insert filepath
+    file2 = #insert filepath
+    file3 ..."""
+    files = [file1, file2, file3, ...]
     data = combine(files)
     write(data)
     
