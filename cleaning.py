@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_excel('C:/Users/aliza/Downloads/Grant+List+2024.xlsx', usecols="I,J,K,L")
+df = pd.read_excel(#insertpath, usecols="I,J,K,L")
 
 df = df[df['Propert Description'].str.contains('DWL')]
 
@@ -16,7 +16,7 @@ df = df.drop("Road Name", axis=1)
 df = df.drop("Tax Map Reference", axis=1)
 df = df.drop("Propert Description", axis=1)
 
-filepath= 'C:/Users/aliza/OneDrive/charlotte-project/Better-addresses.csv'
+filepath= #insertpath
 df.to_csv(filepath, index=False)
 
 a = df.head()
