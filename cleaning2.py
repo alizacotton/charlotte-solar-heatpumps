@@ -1,6 +1,6 @@
 import pandas as pd
 
-data = pd.read_csv("C:/Users/aliza/OneDrive/charlotte-project/full-data.csv")
+data = pd.read_csv(#insert filepath)
 
 data = data.rename(columns={"address.streetAddress": "streetAddress" , "address.city": "City", 
                      "address.zipcode": "Zipcode", "resoFacts.yearBuilt": "yearBuilt", "resoFacts.livingArea": "squareFootage", 
@@ -18,5 +18,5 @@ data["squareFootage"] = data["squareFootage"].str.replace(" sqft", '')
 
 print(data.head)
 
-filepath= 'C:/Users/aliza/OneDrive/charlotte-project/final.csv'
+filepath= #insert filepath
 data.to_csv(filepath, index=False)
